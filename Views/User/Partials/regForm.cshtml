@@ -1,0 +1,14 @@
+@model logReg.Models.User
+
+<span asp-validation-summary="All"></span>
+<form asp-controller="User" asp-action="register" method="post">
+    <label asp-for="name"></label>
+    <input asp-for="name">
+    <label asp-for="email"></label>
+    <input asp-for="email">
+    <label asp-for="password"></label>
+    <input asp-for="password">
+    <label asp-for="confirmPassword"></label>
+    <input asp-for="confirmPassword">
+    <input type="submit" value="Create User">
+</form>
