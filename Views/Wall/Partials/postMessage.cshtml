@@ -1,0 +1,7 @@
+@model wall.Models.Message
+
+<div asp-validation-summary="All"></div>
+<form asp-controller="Message" asp-action="makeMessage" method="post">
+    <label asp-for="message">Post a Message</label>
+    <input type="text" asp-for="message">
+</form>

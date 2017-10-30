@@ -1,0 +1,18 @@
+
+
+@Html.Partial("./Partials/postMessage")
+
+@foreach(object message in ViewBag.Messages)
+{
+    <p>@message["name"]</p>
+    <p>@message["message"]</p>
+    @Html.Partial("./Partials/postComment", new ViewDataDictionary {{"id", message["message_id"]}})
+    @foreach(object comment in ViewBag.Comments)
+    {
+        if(comment["message_id"] == message["message_id"])
+        {
+            <p>@comment["name"]</p>
+            <p>@comment["comment"]</p>
+        }
+    }
+}

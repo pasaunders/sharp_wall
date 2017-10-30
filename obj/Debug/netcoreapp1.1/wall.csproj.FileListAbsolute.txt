@@ -1,0 +1,4 @@
+C:\Users\Patrick\code\sharp_wall\bin\Debug\netcoreapp1.1\wall.deps.json
+C:\Users\Patrick\code\sharp_wall\bin\Debug\netcoreapp1.1\wall.runtimeconfig.json
+C:\Users\Patrick\code\sharp_wall\bin\Debug\netcoreapp1.1\wall.runtimeconfig.dev.json
+C:\Users\Patrick\code\sharp_wall\obj\Debug\netcoreapp1.1\wall.AssemblyInfo.cs

@@ -1,0 +1,8 @@
+@model wall.Models.Comment
+
+<div asp-validation-summary="All"></div>
+<form asp-controller="Comment" asp-action="makeComment" method="post">
+    <label asp-for="comment">Post a Comment</label>
+    <input type="text" asp-for="comment">
+    <input type="hidden" asp-for="messagesId" value="@(ViewData['id'])">
+</form>

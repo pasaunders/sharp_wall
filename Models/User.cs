@@ -12,11 +12,7 @@ namespace wall.Models
         [Required]
         [MinLength(2)]
         [RegularExpression(@"\w+")]
-        public string firstName { get; set; }
-        [Required]
-        [MinLength(2)]
-        [RegularExpression(@"\w+")]
-        public string lastName { get; set; }
+        public string name { get; set; }
         [Required]
         [EmailAddress]
         public string email { get; set; }
@@ -29,7 +25,7 @@ namespace wall.Models
     public class Login
     {
         [Required]
-        public string firstName {get;set;}
+        public string name {get;set;}
         public string password {get;set;}
     }
 }
